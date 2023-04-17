@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frank Ocean Gallery</title>
+	<script>
+		function changeImage() {
+			var images = [
+				"frank1.jpg",
+				"frank2.jpg",
+				"frank3.jpg",
+				"frank4.jpg"
+			];
+			var img = document.getElementById("frank-image");
+			var randomIndex = Math.floor(Math.random() * images.length);
+			img.src = images[randomIndex];
+		}
+	</script>
+</head>
+<body>
+	<h1>Frank Ocean Gallery</h1>
+	<p>Click the image to see a new photo of Frank Ocean:</p>
+	<img id="frank-image" src="frank1.jpg" alt="Frank Ocean" onclick="changeImage()">
+</body>
+</html>
